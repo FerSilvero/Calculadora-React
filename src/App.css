@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  background-color: #1b1b32;
+  background-color: #0c3b38;
   font-family: Lato, sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -13,9 +13,9 @@
   height: 500px;
   padding: 14px;
   margin: 18px;
-  background-color: #99c9ff;
+  background-color: #060e0a;
   border-radius: 20px;
-  border: 5px solid white;
+  border: 5px solid #c5d0e8;
 }
 
 .fila {

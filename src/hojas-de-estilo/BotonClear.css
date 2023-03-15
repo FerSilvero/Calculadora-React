@@ -9,12 +9,12 @@
   align-items: center;
   font-weight: bold;
   color: white;
-  border: 2px solid white;
+  border: 2px solid #0c3b38;
   border-radius: 45px;
   cursor: pointer;
   user-select: none;
 }
 
 .boton-clear:hover {
-  background-color: #ebb000;
+  background-color: #d46a7c;
 }
