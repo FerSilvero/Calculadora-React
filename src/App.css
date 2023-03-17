@@ -1,21 +1,21 @@
 .App {
-  height: 100vh;
   background-color: #0c3b38;
   font-family: Lato, sans-serif;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  min-height: 100vh;
 }
 
 .contenedor-calculadora {
   width: 300px;
   height: 500px;
   padding: 14px;
-  margin: 18px;
+  margin-top: 36px;
+  margin-bottom: 36px;
   background-color: #060e0a;
   border-radius: 20px;
   border: 5px solid #c5d0e8;
+  position: relative;
 }
 
 .fila {
@@ -23,4 +23,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.aboutMe {
+  position: fixed;
+  bottom: -53px;
+  right: 88px;
+  margin: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nombre {
+  color: white;
+  font-family: serif, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.icons {
+  position: fixed;
+  bottom: -40px;
+  right: 20px;
+  margin: 48px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.icono-github {
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.icono-linkedin {
+  font-size: 35px;
 }

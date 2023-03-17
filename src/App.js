@@ -4,6 +4,8 @@ import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
+import { BsGithub } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
 
 function App() {
 
@@ -23,37 +25,49 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='contenedor-calculadora'>
-        <Pantalla input={input} />
-        <div className='fila'>
-          <Boton manejarClic={agregarInput}>1</Boton>
-          <Boton manejarClic={agregarInput}>2</Boton>
-          <Boton manejarClic={agregarInput}>3</Boton>
-          <Boton manejarClic={agregarInput}>+</Boton>
+        <div className='contenedor-calculadora'>
+          <Pantalla input={input} />
+          <div className='fila'>
+            <Boton manejarClic={agregarInput}>1</Boton>
+            <Boton manejarClic={agregarInput}>2</Boton>
+            <Boton manejarClic={agregarInput}>3</Boton>
+            <Boton manejarClic={agregarInput}>+</Boton>
+          </div>
+          <div className='fila'>
+            <Boton manejarClic={agregarInput}>4</Boton>
+            <Boton manejarClic={agregarInput}>5</Boton>
+            <Boton manejarClic={agregarInput}>6</Boton>
+            <Boton manejarClic={agregarInput}>-</Boton>
+          </div>
+          <div className='fila'>
+            <Boton manejarClic={agregarInput}>7</Boton>
+            <Boton manejarClic={agregarInput}>8</Boton>
+            <Boton manejarClic={agregarInput}>9</Boton>
+            <Boton manejarClic={agregarInput}>*</Boton>
+          </div>
+          <div className='fila'>
+            <Boton manejarClic={calcularResultado}>=</Boton>
+            <Boton manejarClic={agregarInput}>0</Boton>
+            <Boton manejarClic={agregarInput}>.</Boton>
+            <Boton manejarClic={agregarInput}>/</Boton>
+          </div>
+          <div className='fila'>
+            <BotonClear manejarClear={() => setInput('')}>
+              Clear
+            </BotonClear>
+          </div>
         </div>
-        <div className='fila'>
-          <Boton manejarClic={agregarInput}>4</Boton>
-          <Boton manejarClic={agregarInput}>5</Boton>
-          <Boton manejarClic={agregarInput}>6</Boton>
-          <Boton manejarClic={agregarInput}>-</Boton>
-        </div>
-        <div className='fila'>
-          <Boton manejarClic={agregarInput}>7</Boton>
-          <Boton manejarClic={agregarInput}>8</Boton>
-          <Boton manejarClic={agregarInput}>9</Boton>
-          <Boton manejarClic={agregarInput}>*</Boton>
-        </div>
-        <div className='fila'>
-          <Boton manejarClic={calcularResultado}>=</Boton>
-          <Boton manejarClic={agregarInput}>0</Boton>
-          <Boton manejarClic={agregarInput}>.</Boton>
-          <Boton manejarClic={agregarInput}>/</Boton>
-        </div>
-        <div className='fila'>
-          <BotonClear manejarClear={() => setInput('')}>
-            Clear
-          </BotonClear>
-        </div>
+      <div className='aboutMe'>
+        <div className='nombre'>Desarrollado por Fernando Silvero</div>
+          <div className='icons'>
+            <div 
+              onClick={() => window.open('https://www.ejemplo.com', '_blank')}>
+              <BsGithub className='icono-github'/>
+            </div>
+            <div className='icono-linkedin'>
+            <BsLinkedin />
+            </div>
+          </div>      
       </div>
     </div>
   );
