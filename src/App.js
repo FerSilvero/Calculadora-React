@@ -61,11 +61,12 @@ function App() {
         <div className='nombre'>Desarrollado por Fernando Silvero</div>
           <div className='icons'>
             <div 
-              onClick={() => window.open('https://www.ejemplo.com', '_blank')}>
+              onClick={() => window.open('https://github.com/FerSilvero/Calculadora-React', '_blank')}>
               <BsGithub className='icono-github'/>
             </div>
-            <div className='icono-linkedin'>
-            <BsLinkedin />
+            <div 
+              onClick={() => window.open('https://www.linkedin.com/in/fersilvero/', '_blank')}>
+              <BsLinkedin className='icono-linkedin'/>
             </div>
           </div>      
       </div>

@@ -10,7 +10,7 @@
   width: 300px;
   height: 500px;
   padding: 14px;
-  margin-top: 36px;
+  margin-top: 45px;
   margin-bottom: 36px;
   background-color: #060e0a;
   border-radius: 20px;
@@ -27,7 +27,7 @@
 
 .aboutMe {
   position: fixed;
-  bottom: -53px;
+  bottom: -59px;
   right: 88px;
   margin: 68px;
   display: flex;
@@ -36,10 +36,11 @@
 }
 
 .nombre {
-  color: white;
+  color: #c5d0e8;
   font-family: serif, sans-serif;
   font-style: italic;
   font-size: 15px;
+  cursor: default;
 }
 
 .icons {
@@ -55,8 +56,29 @@
 .icono-github {
   font-size: 35px;
   margin-right: 5px;
+  border-radius: 50%;
+  transition: 0.3s;
+  transition-property: box-shadow;
 }
+  
+.icono-github:hover {
+  box-shadow: 
+              0 0 12px #c9d1d9;
+  color:#c9d1d9 ;
+}
+
 
 .icono-linkedin {
   font-size: 35px;
+  border-radius: 50%;
+  transition: 0.3s;
+  transition-property: box-shadow;
 }
+
+.icono-linkedin:hover {
+  box-shadow: 
+              0 0 12px #0a66c2;
+  color: #0a66c2;
+}
+
+
