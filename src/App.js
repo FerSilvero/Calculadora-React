@@ -25,9 +25,9 @@ function App() {
 
   return (
     <div className='App'>
-        <div className='contenedor-calculadora'>
-          <Pantalla input={input} />
-          <div className='fila'>
+      <div className='contenedor-calculadora'>
+        <Pantalla input={input} />
+         <div className='fila'>
             <Boton manejarClic={agregarInput}>1</Boton>
             <Boton manejarClic={agregarInput}>2</Boton>
             <Boton manejarClic={agregarInput}>3</Boton>
@@ -56,20 +56,18 @@ function App() {
               Clear
             </BotonClear>
           </div>
-        </div>
-      <div className='aboutMe'>
-        <div className='nombre'>Desarrollado por Fernando Silvero</div>
-          <div className='icons'>
-            <div 
-              onClick={() => window.open('https://github.com/FerSilvero/Calculadora-React', '_blank')}>
-              <BsGithub className='icono-github'/>
-            </div>
-            <div 
-              onClick={() => window.open('https://www.linkedin.com/in/fersilvero/', '_blank')}>
-              <BsLinkedin className='icono-linkedin'/>
-            </div>
-          </div>      
       </div>
+      <div className='nombre'>Desarrollado por Fernando Silvero</div>
+      <div className='icons'>
+        <div 
+          onClick={() => window.open('https://github.com/FerSilvero/Calculadora-React', '_blank')}>
+          <BsGithub className='icono-github'/>
+        </div>
+        <div 
+          onClick={() => window.open('https://www.linkedin.com/in/fersilvero/', '_blank')}>
+          <BsLinkedin className='icono-linkedin'/>
+        </div>
+      </div>      
     </div>
   );
 }

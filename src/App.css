@@ -1,9 +1,11 @@
 .App {
-  background-color: #0c3b38;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,59,56,1) 47%, rgba(0,212,255,1) 100%);
   font-family: Lato, sans-serif;
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .contenedor-calculadora {
@@ -15,7 +17,8 @@
   background-color: #060e0a;
   border-radius: 20px;
   border: 5px solid #c5d0e8;
-  position: relative;
+  box-shadow:  5px 5px 10px #040806,
+              -5px -5px 10px #08140e;
 }
 
 .fila {
@@ -25,26 +28,21 @@
   justify-content: center;
 }
 
-.aboutMe {
-  position: fixed;
+.nombre {
+  position: absolute;
   bottom: -59px;
   right: 88px;
   margin: 68px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.nombre {
-  color: #c5d0e8;
+  color: #060e0a;
   font-family: serif, sans-serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
   cursor: default;
 }
 
 .icons {
-  position: fixed;
+  position: absolute;
   bottom: -40px;
   right: 20px;
   margin: 48px;
@@ -62,11 +60,8 @@
 }
   
 .icono-github:hover {
-  box-shadow: 
-              0 0 12px #c9d1d9;
-  color:#c9d1d9 ;
+  color: #c9d1d9;
 }
-
 
 .icono-linkedin {
   font-size: 35px;
@@ -76,9 +71,7 @@
 }
 
 .icono-linkedin:hover {
-  box-shadow: 
-              0 0 12px #0a66c2;
-  color: #0a66c2;
+  color: #00f;
 }
 
 
